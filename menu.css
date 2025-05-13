@@ -1,0 +1,180 @@
+/* Stylesheet of menu.html  and about.html*/
+
+/* Setting default browser styles and apply box-sizing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Seting background color and smooth scroll behavior */
+html{
+    background-color: bisque;
+    scroll-behavior: smooth;
+}
+
+/* Header section with background image and heading */
+header{
+    padding: 190px 60px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url('homepg pics/graphics.jpg'); /* Replace with your actual image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Style for main heading inside header */
+header h1{
+    font-size: 120px;
+    color:rgb(77, 32, 32);
+    background-color: rgba(176, 163, 147, 0.918);
+    font-family: "DM Sans", sans-serif;
+    margin-top: 20px;
+    width: 1000px;
+    align-items: center;
+}
+
+/* Navigation bar */
+.dashboard-nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  background: bisque;
+  padding: 50px 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Individual navigation link styles */
+.nav-item {
+  text-align: center;
+  text-decoration: none;
+  color: #4b2e2e;
+  transition: transform 0.3s,
+  color 0.1s;
+}
+
+/* Icon inside navigation items */
+.nav-item i {
+  font-size: 50px;
+  margin-bottom: 2px;
+  display: block;
+}
+
+/* Hover and active effects for navigation links */
+.nav-item:hover {
+  transform: scale(1.1);
+  color: #7b3f00;
+}
+
+.nav-item:active{
+    color: #ecd0b1;
+}
+
+/* Section containing the menu layout */
+.menu-content {
+  padding: 100px 60px;
+  background-color: bisque;
+  color: #3e1f1f;
+}
+
+/* Section heading */
+.menu-content h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Responsive grid layout for menu items */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+/* Individual menu item box styling */
+.menu-item {
+  background-color: #3e1f1f86;
+  border-radius: 15px;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+/* Hover effect for menu cards */
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+/* Menu item image styling */
+.menu-item img {
+  width: 60; /* Consider fixing this unit, maybe 'px' is intended */
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Menu item title */
+.menu-item h3 {
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+/* Menu item price or description */
+.menu-item p {
+  font-size: 18px;
+  color: #ffe8d2;
+  font-weight: bold;
+}
+
+/* css code for about.html */
+/* Paragraph section for about area */
+.about-para {
+  padding: 80px 60px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(77, 32, 32);
+  font-family: "DM Sans", sans-serif;
+  min-height: 200px;
+}
+
+/* Wrapper to align text and button as columns */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px; /* Controls spacing between text and button */
+}
+
+/* Back to home button styling */
+.back-to-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e1f1f;
+  color: bisque;
+  font-family: "DM Sans", sans-serif;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 160px;
+  height: 40px;
+}
+
+/* Wrapper to center the back button */
+.back-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}

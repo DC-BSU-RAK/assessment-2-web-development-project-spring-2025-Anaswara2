@@ -1,0 +1,492 @@
+/* Stylesheet of index.html */
+
+/* Setting default margin,padding and other properties */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    background-color: bisque;
+    scroll-behavior: smooth;
+}
+
+/* Background image for entire body  */
+body {
+    background-image: url('https://images.unsplash.com/photo-1672305330907-8092be9161ea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with actual path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* navigation bar at the top  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    background-color: rgba(17, 1, 1, 0.584);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+}
+
+/* Logo Styling  */
+.logo a{
+    color: bisque;
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+}
+
+/* Navigation links container  */
+.navbar{
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+/* Styling the navigation links  */
+.navbar a{
+    color:  rgb(245, 219, 192);
+    font-family: "DM Sans", sans-serif;
+    font-size: 25px;
+    font-stretch: narrower
+}
+
+/* Shopping icon button  */
+.shop-icon a{
+    background-color: rgb(99, 42, 42);
+    color: bisque;
+    border-radius: 8px;
+    padding: 8px 10px;
+}
+
+.shop-icon a:hover{
+    background-color: rgb(77, 32, 32);
+}
+
+.shop-icon:active{
+    opacity: 0.7;
+}
+
+/* Welcome text in the intro section  */
+.welcome{
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    color: bisque;
+    font-weight: bolder;
+}
+
+/* Quote text  */
+.quote{
+    font-family: "Caveat", cursive;
+    font-size: 40px;
+    color: bisque;
+}
+
+/* Main title  */
+.title{
+    font-weight: bold;
+    font-size: 50px
+}
+
+/* Text container on the homepage  */
+.homepage-text{
+        height: calc(100vh - 100px); 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;  /* aligns to the bottom */
+        align-items: flex-start;      /* aligns to the left */
+        text-align: left;
+        padding: 60px 40px;
+}
+
+/* Order now Button  */
+.order-now {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(99, 42, 42);
+    color: bisque;
+    font-family: "DM Sans", sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.15s,
+    opacity 0.15s;
+}
+
+.order-now:hover {
+    background-color: rgb(77, 32, 32);
+}
+
+.order-now:active{
+    opacity: 0.7;
+}
+
+/* About Section styling  */
+.about {
+    padding: 80px 60px;
+    background-color: bisque;
+    min-height: 600px;
+}
+
+/* Flexbox layout for About content */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 60px;
+}
+
+/* About section text */
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    font-size: 20px;
+    color: rgb(99, 42, 42);
+    font-family: "DM Sans", sans-serif;
+}
+
+/* About section image container */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+}
+
+/* About image styling */
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Learn More button */
+.learn-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(99, 42, 42);
+    color: bisque;
+    font-family: "DM Sans", sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.15s,
+    opacity 0.15s;
+}
+
+.learn-more:hover {
+    background-color: rgb(77, 32, 32);
+}
+
+.learn-more:active{
+    opacity: 0.7;
+}
+
+.about-content {
+    flex-direction: row-reverse; /* Flips image to left, text to right */
+}
+
+/* Menu section styling */
+.menu{
+    padding: 100px 60px;
+    background-color: rgb(48, 16, 16);
+}
+
+/* Menu content layout  */
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 60px;
+}
+
+/* Menu description text  */
+.menu-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    font-size: 20px;
+    color:bisque;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 30px;
+}
+
+/* Menu images container  */
+.menu-images{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+/* Zoom effect when hovered  */
+.menu-images img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-images img:hover {
+    transform: scale(1.1);
+}
+
+/* view menu button  */
+.view-menu {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: bisque;
+    color: rgb(99, 42, 42);
+    font-family: "DM Sans", sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.15s,
+    background-color 0.15s, color 0.15s;
+}
+
+.view-menu:hover {
+    background-color: rgb(136, 119, 98);
+}
+
+.view-menu:active{
+    background-color: rgb(75, 67, 56);
+    color: bisque;
+}
+
+/* opening hours section  */
+.opening-hours{
+    padding: 120px 60px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url('homepg pics/Illustration.jpg'); /* Replace with your actual image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/* Text inside opening hours  */
+.opening-hours-text{
+    flex: 1;
+    font-size: 20px;
+    color:rgb(77, 32, 32);
+    background-color: rgba(176, 163, 147, 0.598);
+    font-family: "DM Sans", sans-serif;
+    margin-top: 20px;
+    align-items: center;
+    min-height: 200px;
+}
+.opening-hours {
+    padding: 120px 60px;
+    background-color: bisque;
+    text-align: center;
+}
+
+/* Customer review section */
+.review-section {
+  padding: 80px 60px;
+  background-color: rgb(48, 16, 16);
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+}
+
+/* Review section title */
+.review-section h2 {
+  color: bisque;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+/* Review card */
+.review-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 30px;
+  padding-bottom: 20px;
+  scrollbar-width: none; /* for Firefox */
+}
+.review-slider::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari */
+}
+
+.review-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background: bisque;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  padding: 30px 20px 30px 20px;
+  text-align: center;
+}
+
+.review-card img {
+  width: 100px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.review-card h3 {
+  color: #4b2e2e;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.review-card p {
+  font-size: 16px;
+  color: #5c3e3e;
+}
+
+/* Contact section  */
+.contact{
+    padding: 140px 60px;
+    background-color: bisque;
+}
+
+/* Contact Layout  */
+.contact-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 60px;
+}
+
+/* Contact text  */
+.contact-text{
+    flex: 1;
+    min-width: 200px;
+    max-width: 400px;
+    font-size: 20px;
+    color:rgb(48, 16, 16);
+    font-family: "DM Sans", sans-serif;
+    margin-top: 30px;
+}
+
+.contact-content {
+    flex-direction: row-reverse; /* Flips image to left, text to right */
+}
+
+/* Contact button  */
+.contact-button-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.contact-us-button {
+  background-color: #3e1f1f;
+  color: bisque;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-us-button:hover {
+  background-color: #5a2e2e;
+}
+
+/* Google map iframe  */
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.395);
+  }
+
+  /* Footer Section  */
+  .footer {
+    background: rgb(48, 16, 16);
+    padding: 40px 60px;
+    color: bisque;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  /* Footer Layout  */
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-text {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-text h3 {
+    font-size: 20px;
+    color: rgb(186, 157, 121);
+    margin-bottom: 15px;
+  }
+  
+  .footer-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-text ul li {
+    margin-bottom: 10px;
+    color:bisque;
+  }
+  
+  .footer-text p {
+    font-size: 15px;
+    color: bisque;
+  }
+  
+  .footer a {
+    color: rgb(186, 157, 121);
+    font-size: 40px;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .footer-text a{
+    font-size: 15px;
+    color: bisque;
+  }
+
+  /* Footer social media icons  */
+  .social-icons {
+    display: flex;
+    gap: 15px; 
+    margin-top: 15px;
+    gap: 40px;
+  }
+  
+  .social-icons a {
+    color: bisque;
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: beige;
+  }

@@ -1,0 +1,77 @@
+/* Stylesheet for faq.html */
+
+/* Styling the entire body */
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background-color: rgb(48, 16, 16); 
+  color: bisque; 
+}
+
+/* Container section for the FAQ content */
+.faq-section {
+  padding: 60px 30px;
+  max-width: 900px;
+  margin: 0 auto; 
+}
+
+/* Main heading for the FAQ page */
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 50px;
+  color: bisque;
+}
+
+/* Each individual FAQ item container */
+.faq-item {
+  margin-bottom: 30px;
+  background-color: #c5a883; 
+  padding: 20px;
+  border-left: 6px solid #ffffff; 
+  border-radius: 10px; 
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.05); 
+}
+
+/* FAQ item heading */
+.faq-item h3 {
+  margin-top: 0;
+  font-size: 22px;
+  color: rgb(48, 16, 16); 
+}
+
+/* FAQ item paragraph */
+.faq-item p {
+  font-size: 18px;
+  line-height: 1.6; 
+  color: rgb(48, 16, 16);
+}
+
+/* Container for the back-to-home button */
+.back-home {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Styling for the back button */
+.back-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: bisque;
+  color: #3e1f1f;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for back button */
+.back-button:hover {
+  background-color: rgb(157, 137, 112);
+}
+
+/* Active effect for back button */
+.back-button:active {
+  background-color: #3e1f1f;
+  color: bisque;
+}

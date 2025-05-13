@@ -1,0 +1,106 @@
+/* Stylesheet for Contact.html  */
+
+/* setting default styles and applying font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Seting background and text color for the body */
+body {
+  background-color: bisque;
+  color: #3e1f1f;
+}
+
+/* Section containing the contact form */
+.contact-form-section {
+  padding: 100px 60px 40px;
+  text-align: center;
+}
+
+/* Heading style for the contact section */
+.contact-form-section h1 {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+/* Contact form container */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Style for input fields */
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  width: 100%;
+}
+
+/* Submit button styling */
+.contact-form button {
+  background-color: #3e1f1f;
+  color: bisque;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.contact-form button:hover {
+  background-color: #5a2e2e;
+}
+
+/* Section for displaying contact details */
+.contact-details {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #3e1f1f;
+  color: bisque;
+}
+
+/* Heading style inside contact details */
+.contact-details h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph style inside contact details */
+.contact-details p {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+/*back-to-home button container*/
+.back-home-container {
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* Styling for the back-to-home link button */
+.back-to-home {
+  background-color: #3e1f1f;
+  color: bisque;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for back-to-home button */
+.back-to-home:hover {
+  background-color: #5a2e2e;
+}
