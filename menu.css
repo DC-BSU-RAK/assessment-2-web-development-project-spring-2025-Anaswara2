@@ -109,7 +109,7 @@ header h1{
 
 /* Hover effect for menu cards */
 .menu-item:hover {
-  transform: scale(1.05);
+  transform: scale(0.9);
 }
 
 /* Menu item image styling */

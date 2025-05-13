@@ -337,6 +337,15 @@ header {
   text-align: center;
 }
 
+.review-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.review-card:hover {
+    transform: scale(0.9);
+}
+
 .review-card img {
   width: 100px;
   height: 80px;
